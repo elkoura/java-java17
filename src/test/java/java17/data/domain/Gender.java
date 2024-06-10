@@ -1,5 +1,5 @@
 package java17.data.domain;
 
 public enum Gender {
-    M, F
+    (M: "m", F: "f")
 }
