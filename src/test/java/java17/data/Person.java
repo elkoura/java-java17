@@ -10,7 +10,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(String firstname, String lastname, Integer age, String password) {
+    public Person(String firstname, String lastname, Integer age, String password) {//un constricteur pour initialiser les parametre de la class personne 
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
