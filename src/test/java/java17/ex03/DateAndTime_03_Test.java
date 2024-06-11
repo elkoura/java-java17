@@ -17,7 +17,7 @@ public class DateAndTime_03_Test {
     public void test_localTime_of() {
 
         // TODO créer un objet LocalTime à l'heure 15h24m02s
-        LocalTime result = null;
+        LocalTime result = Localt ;
 
         // TODO valoriser les différentes variables afin de rendre le test passant
         int hour = 0;
@@ -51,11 +51,13 @@ public class DateAndTime_03_Test {
 
         // TODO créer un objet localTime à l'heure 12h00m00s
         // TODO utiliser la méthode of
-        LocalTime localTime = null;
+        LocalTime localTime = LocalTime.of(12, 0, 0);
 
         // TODO Formatter l'heure pour que le test soit passant
-        String result = null;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
+        String result = localTime.format(formatter);
 
         assertThat(result, is("12:00"));
     }
 }
+
